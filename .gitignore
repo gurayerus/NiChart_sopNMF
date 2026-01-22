@@ -1,0 +1,27 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python temporary files
+*.~ 
+*.swp
+*.tmp
+*.temp
+
+# IDE/editor temporary files (optional)
+*.bak
+*.orig
+*.log
+
+# tmp directory
+tmp/
+temp/
+
+# output directory
+##test/input
+test/tmp*
+test/output
+data
+archive
+
