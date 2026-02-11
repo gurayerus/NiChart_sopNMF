@@ -16,13 +16,13 @@
 mamba create -n sopnmf python=3.10.18     
 mamba activate sopnmf
 
-# install NiChart_sopNMF
+# install NiChart_sopNMF (FIXME: needs work!)
 git clone https://github.com/gurayerus/NiChart_sopNMF
 cd NiChart_sopNMF
-pip install nichart-opnmf [FIXME: dependencies ANTs 2.3.1, fireants and Python (nibabel))
+# install dependencies: ANTs 2.3.1, fireants nibabel (see conda_env_list_short.txt)
 ```
 
-- Or use the docker container: 
+- Or use the docker container (FIXME: needs work!): 
     
     cbica/nichart_opnmf:initialdemo (https://hub.docker.com/r/cbica/nichart_opnmf)
   
@@ -32,13 +32,14 @@ pip install nichart-opnmf [FIXME: dependencies ANTs 2.3.1, fireants and Python (
 
  
 ```bash
+mamba activate sopnmf
 cd ./test/scripts
 ./run_test_opnmf.sh
 ```
 
-The check the results, see:
+Check the results:
 ```bash
-./test/output/fireants_default/subj1
+cd ../output/fireants_default/subj1
 cat subj1_MUSIC_C64.csv
 ```
  
