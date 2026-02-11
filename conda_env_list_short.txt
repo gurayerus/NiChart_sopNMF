@@ -1,0 +1,9 @@
+# packages in environment at /cbica/home/erusg/.conda/envs/fireants:
+#
+# Name                    Version                   Build  Channel
+fireants                  1.0.0                    pypi_0    pypi
+fireants-fused-ops        1.0.0                    pypi_0    pypi
+nibabel                   5.3.3                    pypi_0    pypi
+numpy                     2.2.6                    pypi_0    pypi
+pandas                    2.3.3                    pypi_0    pypi
+python                    3.10.18              h1a3bd86_0  

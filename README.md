@@ -5,13 +5,20 @@
 ## Features
 - Calculate RAVENS maps for different tissue types (segmentation labels)
 - Calculate RAVENS maps using different methods (ANTs, SynthMorph)
-- Post-processing steps to calculate opNMF coeff.s
+- Post-processing steps to calculate opNMF coeff.s from GM RAVENS maps
 
 ## Installation
 
 - You can install the package using:
 
 ```bash
+# create environment
+mamba create -n sopnmf python=3.10.18     
+mamba activate sopnmf
+
+# install NiChart_sopNMF
+git clone https://github.com/gurayerus/NiChart_sopNMF
+cd NiChart_sopNMF
 pip install nichart-opnmf [FIXME: dependencies ANTs 2.3.1, fireants and Python (nibabel))
 ```
 
@@ -21,7 +28,7 @@ pip install nichart-opnmf [FIXME: dependencies ANTs 2.3.1, fireants and Python (
   
 ## Application
 
-- See the test scripts to apply calculation on the test image:
+- See the test scripts to apply calculation on the test image
  
 ```bash
 cd ./test/scripts
