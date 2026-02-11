@@ -17,6 +17,7 @@ mrid='subj1'
 regmode='quick2'
 regmode='quick'         # Default mode (~10 minutes)
 regmode='test'          # For a quick test (~1 minutes)
+regmode='default'          # For a quick test (~1 minutes)
 
 ## Registration backend: ants (default) or fireants
 reg_backend='fireants'
@@ -35,11 +36,11 @@ output_dir="${app_dir}/test/output/${reg_backend}_${regmode}/${mrid}"
 
 ## Input files
 t1="${input_dir}/${mrid}_T1.nii.gz"
-t1seg="${input_dir}/${mrid}_T1_DLMUSE.nii.gz"
+t1seg="${input_dir}/${mrid}_T1_seg.nii.gz"
 
 ## Reference files
 template="${app_dir}/resources/templates/istaging/BLSA_SPGR+MPRAGE_averagetemplate.nii.gz"
-label_dict="${app_dir}/resources/dictionaries/list_MUSE_derived.csv"
+label_dict="${app_dir}/resources/dictionaries/list_FAST.csv"
 music_dir="${app_dir}/resources/music_rois/nifti"
 
 ## Create out dir for subject

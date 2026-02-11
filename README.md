@@ -29,10 +29,19 @@ pip install nichart-opnmf [FIXME: dependencies ANTs 2.3.1, fireants and Python (
 ## Application
 
 - See the test scripts to apply calculation on the test image
+
  
 ```bash
 cd ./test/scripts
+./run_test_opnmf.sh
 ```
+
+The check the results, see:
+```bash
+./test/output/fireants_default/subj1
+cat subj1_MUSIC_C64.csv
+```
+ 
 
   
   
